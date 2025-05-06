@@ -22,7 +22,10 @@ let package = Package(
             sources: [
                 "./csfml/src"
             ],
-            publicHeadersPath: "./csfml/include"
+            publicHeadersPath: "./csfml/include",
+            swiftSettings: [
+                .interoperabilityMode(.Cxx)
+            ]
         )
     ],
     cxxLanguageStandard: .cxx17
