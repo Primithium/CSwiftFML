@@ -24,5 +24,6 @@ let package = Package(
             ],
             publicHeadersPath: "./csfml/include"
         )
-    ]
+    ],
+    cxxLanguageStandard: .cxx17
 )
